@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    align-items: center;
+    height: 2500px;
+}
+#text{
+    position:absolute;
+    font-size: 50px;
+    top:100px;
+}

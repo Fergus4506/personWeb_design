@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>slid_change_test1</title>
+    <meta charset="UTF-8">
+    <link href="test1.css" rel="stylesheet">
+</head>
+<body>
+    <p id="text">hihihi</p>
+    <script>
+        function changePercentage(){
+            var text=document.getElementById('text');
+            var scroll=window.pageYOffset;
+            console.log(scroll);
+            if(100+scroll>550){
+                text.style.display="none";
+            }else{
+                text.style.display="block";
+                text.style.position="absolute";
+                text.style.left=scroll*2+"px";
+                text.style.top=100+scroll+"px";
+            }
+        }
+        window.addEventListener('scroll',function(){
+            requestAnimationFrame(changePercentage);
+        })
+    </script>
+
+</body>
