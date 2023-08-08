@@ -15,8 +15,28 @@
                 <li><a href="*">作品展示</a></li>
             </ul>
             <div class="nav_bth">
-                <img src="stack.png"></img>
+                <img onclick="nav_chImg(this)" src="stack.png"></img>
+                <ul class="nav_options_inbth">
+                    <li><a href="*">關於我</a></li>
+                    <li><a href="*">讀書計畫</a></li>
+                    <li><a href="*">特殊能力</a></li>
+                    <li><a href="*">作品展示</a></li>
+                </ul>
             </div>
         </div>
     </header>
+    <script>
+        function nav_chImg(x){
+            let down_menu=document.querySelector('.nav_options_inbth');
+            if(x.src=="file:///D:/personWeb_design/new_component_test/nav/stack.png"){
+                x.src="close.png";
+                down_menu.style.display="block";
+            }else{
+                x.src="stack.png";
+                down_menu.style.display="none";
+                console.log("??")
+            }
+            console.log(x.src);
+        }
+    </script>
 </body>
