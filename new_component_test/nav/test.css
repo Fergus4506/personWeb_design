@@ -5,6 +5,9 @@
 body{
     background-color: black;
 }
+.first_container{
+    background-color: rgb(16, 33, 88);
+}
 header{
     position: relative;
     padding: 10px 2rem;

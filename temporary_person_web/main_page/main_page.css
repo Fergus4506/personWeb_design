@@ -1,0 +1,14 @@
+.information_contaioner{
+    background-color: rgb(1, 104, 18);
+    border-radius: 15px;
+    box-shadow:-5px -5px 0.2px 0.5px rgb(0, 56, 9) inset;
+    width: 1200px;
+    padding: 10px 2rem;
+}
+.bottom_container{
+    background-color: rgb(1, 104, 18);
+    border-radius: 15px;
+    box-shadow:-5px -5px 0.2px 0.5px rgb(0, 56, 9) inset;
+    width: 1200px;
+    padding: 10px 2rem;
+}

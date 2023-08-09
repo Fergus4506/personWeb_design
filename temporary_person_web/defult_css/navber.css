@@ -4,10 +4,20 @@
 }
 body{
     background-color: black;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
 header{
     position: relative;
     padding: 10px 2rem;
+    background-color: rgb(16, 33, 88);
+    width: 1200px;
+    border-radius: 15px;
+    margin-top: 5px;
+    box-shadow:-5px -5px 0.2px 0.5px rgb(5, 15, 48) inset;
 }
 header a{
     color: white;
