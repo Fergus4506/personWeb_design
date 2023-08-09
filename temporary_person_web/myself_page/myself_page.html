@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>敦傑の歷程展示</title>
+    <meta charset="UTF-8">
+    <link href="../defult_css/navber.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navber">
+            <div class="nav_title"><a href="**">敦傑の歷程展示</a></div>
+            <ul class="nav_options">
+                <li><a href="../myself_page/myself_page.html">關於我</a></li>
+                <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
+                <li><a href="../specialskill_page/specialskill_page.html">特殊能力</a></li>
+                <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
+            </ul>
+            <div class="nav_bth">
+                <img onclick="nav_chImg(this)" src="../image_for_web/stack.png"></img>
+                <ul class="nav_options_inbth">
+                    <li><a href="../myself_page/myself_page.html">關於我</a></li>
+                    <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
+                    <li><a href="../specialskill_page/specialskill_page.html">特殊能力</a></li>
+                    <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script>
+        function nav_chImg(x){
+            let down_menu=document.querySelector('.nav_options_inbth');
+            if(x.src=="file:///D:/personWeb_design/temporary_person_web/image_for_web/stack.png"){
+                x.src="../image_for_web/close.png";
+                down_menu.style.display="block";
+            }else{
+                x.src="../image_for_web/stack.png";
+                down_menu.style.display="none";
+                console.log("??")
+            }
+            console.log(x.src);
+        }
+    </script>
+</body>
