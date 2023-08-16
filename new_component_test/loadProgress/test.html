@@ -4,6 +4,21 @@
     <link href="test.css" rel="stylesheet">
 </head>
 <body>
-    <progress max="100" value="10" style="height: 100px;"></progress>
-    <img src="../../temporary_person_web/image_for_web/轉圈圈.gif" style="z-index: 1000;margin-left: -150px; width: 100px;">
+    <div class="container">
+        <progress class="web_load" max="100" value="0"></progress>
+        <!-- <img src="../../temporary_person_web/image_for_web/轉圈圈.gif" style="z-index: 1000;margin-left: -150px; width: 100px;"> -->
+    </div>
+    <script>
+            function count_time(x){
+                var value=x.value;
+                value+=1;
+                console.log(value);
+                x.value=String(value);
+            }
+
+            var load_value=document.querySelector('.web_load');
+            while(load_value.value<100){
+                setTimeout(count_time(load_value),300000);
+            }
+    </script>
 </body>

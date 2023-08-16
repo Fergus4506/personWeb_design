@@ -55,5 +55,21 @@
             }
             console.log(x.src);
         }
+
+        window.addEventListener('scroll',function(){
+            requestAnimationFrame(function(){
+                var scroll=window.pageYOffset;
+                var information_contaioner=document.querySelector('.information_contaioner');
+                var bottom_container=document.querySelector('.bottom_container');
+                console.log(scroll);
+                if(scroll>200){
+                    bottom_container.style.backgroundColor="rgb(63, 63, 63)";
+                    bottom_container.style.boxShadow="-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset";
+                }else if(scroll>50){
+                    information_contaioner.style.backgroundColor="rgb(63, 63, 63)";
+                    information_contaioner.style.boxShadow="-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset";
+                }
+            });
+        })
     </script>
 </body>
