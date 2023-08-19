@@ -5,20 +5,32 @@
 </head>
 <body>
     <div class="container">
-        <progress class="web_load" max="100" value="0"></progress>
+        <div class="progress_box">
+            <div class="progress_move" style="width: 0px;"></div>
+        </div>
+        
         <!-- <img src="../../temporary_person_web/image_for_web/轉圈圈.gif" style="z-index: 1000;margin-left: -150px; width: 100px;"> -->
     </div>
-    <script>
-            function count_time(x){
-                var value=x.value;
-                value+=1;
-                console.log(value);
-                x.value=String(value);
+    <script> 
+        var count=500;
+        function changeProgress(x){
+            x.style.width=parseInt(x.style.width)+10+"px";
+            console.log(x.style.width);
+            console.log("??");
+        }
+        function startProgress(){  
+            var progressMove=document.querySelector('.progress_move');
+            var width=document.querySelector('.progress_move').style.width;
+            console.log(width);
+            count-=10;
+            if(count==0){
+                window.clearInterval(intervalId);
             }
-
-            var load_value=document.querySelector('.web_load');
-            while(load_value.value<100){
-                setTimeout(count_time(load_value),300000);
-            }
+            changeProgress(progressMove);
+            
+        }
+        var intervalId=window.setInterval(startProgress,1000);
+        
+        
     </script>
 </body>
