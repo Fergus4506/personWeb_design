@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="navber">
                 <div class="nav_title"><a href="../main_page/main_page.html">敦傑の歷程展示</a></div>
                 <ul class="nav_options">
                     <li><a href="../myself_page/myself_page.html">關於我</a></li>
                     <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
-                    <li><a href="../specialskill_page/specialskill_page.html">特殊能力</a></li>
+                    <li><a href="../specialskill_page/specialskill_page.html">歷程記錄</a></li>
                     <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
                 </ul>
                 <div class="nav_bth">
@@ -22,13 +22,21 @@
                     <ul class="nav_options_inbth">
                         <li><a href="../myself_page/myself_page.html">關於我</a></li>
                         <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
-                        <li><a href="../specialskill_page/specialskill_page.html">特殊能力</a></li>
+                        <li><a href="../specialskill_page/specialskill_page.html">歷程記錄</a></li>
                         <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
                     </ul>
                 </div>
             </div>
         </header>
     </div>
+
+    <script>
+        var navber = document.querySelector('.header');
+        navber.style.backgroundColor="rgb(63, 63, 63)";
+        navber.style.boxShadow="-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset";
+        var navTitle=document.querySelector('.nav_title')
+    </script>
+
     <div class="container">
         <div class="information_contaioner">
             <h1>Hi Hi</h1>

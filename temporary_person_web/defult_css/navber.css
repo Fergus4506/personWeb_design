@@ -9,19 +9,21 @@ body{
 .container{
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 header{
     position: relative;
     padding: 10px 2rem;
-    background-color: rgb(63, 63, 63);
+    background-color:black;
     width: 1200px;
     border-radius: 15px;
     margin-top: 5px;
-    box-shadow:-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset;
+    /* box-shadow:-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset; */
+    transition: 1.5s;
 }
 header a{
     color: white;
-    transition: 0.5s;
+    transition: 1.5s;
     padding :5px;
 }
 header a:hover{
