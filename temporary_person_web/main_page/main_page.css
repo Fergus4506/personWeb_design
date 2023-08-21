@@ -2,8 +2,16 @@
     background-color: black;
     border-radius: 15px;
     width: 1200px;
-    padding: 10px 2rem;
+    padding: 20px 2rem;
+    margin: 5px;
     height: 1000px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.information_contaioner .inText{
+    color: black;
     transition: 0.5s;
 }
 .bottom_container{
