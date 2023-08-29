@@ -13,10 +13,20 @@
 .information_contaioner .inText{
     color: black;
     transition: 0.5s;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.information_contaioner .inText a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .bottom_container{
-    border-radius: 15px;
+    background-color: black;
     width: 1200px;
-    padding: 10px 2rem;
+    border-radius: 15px;
+    padding: 20px 2rem;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
