@@ -17,6 +17,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-shadow:5px 5px 0.2px 0.5px rgb(22, 22, 22) inset;
+    padding: 25px;
 }
 .information_contaioner .inText{
     color: black;
