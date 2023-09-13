@@ -4,7 +4,7 @@
     width: 1200px;
     padding: 20px 2rem;
     margin: 5px;
-    height: 1000px;
+    height: auto;
     transition: 0.5s;
     display: flex;
     align-items: center;
@@ -27,6 +27,18 @@
     text-decoration: none;
     color: black;
     font-family: 'Noto Sans TC', sans-serif;
+}
+.self_img{
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card_icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 .bottom_container{
     background-color: black;

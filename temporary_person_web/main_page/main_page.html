@@ -52,9 +52,16 @@
                 <h2 class="inText">FB:<a class="inText" href="https://www.facebook.com/fergus4506">楊敦傑</a></h2>
                 <h2 class="inText">IG:<a class="inText" href="https://www.instagram.com/fergus5211">fergus5211</a></h2>
                 <h2 class="inText">GitHub:<a class="inText" href="https://github.com/Fergus4506">Yang Dunjie</a></h2>
-                <h2 class="inText">以下還會有一個自我檢測的樹狀圖.....(施工中)</h2>
-                <!-- <img src=""> -->
+                <h2 class="inText">-----------------------------------------------------------------------</h2>
+                <h2 class="inText" >自我檢測和自我簡介表</h2>
+                <img class="self_img" src="../image_for_web/self_intr.png">
                 <h2 class="inText">偷偷說一下，我也是個熱愛遊玩集換式卡片遊戲的人，有興趣我們也可以來交流一下。</h2>
+                <div class="card_icon">
+                    <img style="height:50%;" src="../image_for_web/WS.png">
+                    <img style="height:50%;" src="../image_for_web/YGO.jpg">
+                    <img style="height:50%;" src="../image_for_web/PTCG.png">
+                    <img style="height:50%;" src="../image_for_web/UA.jpg">
+                </div>
             </div>
             
         </div>
@@ -62,7 +69,9 @@
     
     <div class="container">
         <div class="bottom_container">
-            <p class="inText">此網站設計皆為學術用途，如到用畢追究責任。</p>
+            <p class="inText">此網站設計皆為學術用途，如盜用畢追究責任。</p>
+            <p class="inText">爆肝人小六製作</p>
+            <p class="inText">icon感謝https://www.flaticon.com/提供</p>
         </div>
     </div>
     
@@ -87,6 +96,7 @@
                 var information_contaioner=document.querySelector('.information_contaioner');
                 var bottom_container=document.querySelector('.bottom_container');
                 var inText=document.querySelectorAll('.inText');
+                var self_img=document.querySelector('.self_img');
                 console.log(inText);
                 if(scroll>200){
                     bottom_container.style.backgroundColor="rgb(63, 63, 63)";
@@ -95,8 +105,20 @@
                     information_contaioner.style.backgroundColor="rgb(63, 63, 63)";
                     information_contaioner.style.boxShadow="-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset";
                     for(var i=0;i<inText.length;i++){
-                        inText[i].style.color="white";
+                        if(i==7){
+                            inText[i].style.color="rgb(0,245,255)";
+                        }else if(i==9){
+                            inText[i].style.color="rgb(0,255,127)";
+                        }else if(i==11){
+                            inText[i].style.color="rgb(147,112,219)";
+                        }else if(i==13){
+                            inText[i].style.color="rgb(255,106,106)";
+                        }else{
+                            inText[i].style.color="white";
+                        }
                     }
+                    self_img.style.opacity="1";
+                    console.log(self_img.style.opacity);
                 }
             });
         })
