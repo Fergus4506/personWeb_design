@@ -28,6 +28,18 @@
     color: black;
     font-family: 'Noto Sans TC', sans-serif;
 }
+.self_img{
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card_icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
 .bottom_container{
     background-color: black;
     width: 1200px;
