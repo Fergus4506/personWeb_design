@@ -48,6 +48,17 @@ header a:hover{
 }
 .navber .nav_title{
     font-size: 25px;
+    display: flex;
+    align-items:end;
+}
+.navber .breadcrumb{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 8px;
+}
+.navber .nav_title p{
+    margin-bottom: 12px;
+    font-size: 18px;
 }
 .navber a{
     text-decoration: none;
@@ -55,11 +66,9 @@ header a:hover{
 .nav_options{
     display: flex;
 }
-.ul .link{
-    gap: 5rem;
-}
 .navber .nav_bth {
     display: none;
+    z-index: 10000;
 }
 .navber .nav_bth .nav_options_inbth{
     display: none;

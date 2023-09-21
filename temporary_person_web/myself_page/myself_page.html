@@ -3,7 +3,7 @@
     <title>敦傑の歷程展示</title>
     <meta charset="UTF-8">
     <link href="../defult_css/navber.css" rel="stylesheet">
-    <link href="main_page.css" rel="stylesheet">
+    <link href="myself_page.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@600;900&display=swap" rel="stylesheet">
@@ -12,9 +12,9 @@
     <div class="container">
         <header class="header">
             <div class="navber">
-                <div class="nav_title"><a href="../main_page/main_page.html">敦傑の歷程展示</a></div>
+                <div class="nav_title"><a href="../main_page/main_page.html">敦傑の歷程展示</a><p class="breadcrumb">/</p><a class="breadcrumb" href="myself_page.html">關於我</a></div>
                 <ul class="nav_options">
-                    <li><a href="../myself_page/myself_page.html">關於我</a></li>
+                    <li><a href="myself_page.html">關於我</a></li>
                     <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
                     <li><a href="../specialskill_page/specialskill_page.html">歷程記錄</a></li>
                     <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
@@ -39,35 +39,57 @@
         var navTitle=document.querySelector('.nav_title')
     </script>
 
+
     <div class="container">
         <div class="information_contaioner">
-            <div class="inText_container">
-                <h1 class="inText">Hi Hi 我的名字是楊敦傑 你也可以叫我小六</h1>
-                <h1 class="inText">-----------------------------------------------------------------------</h1>
-                <h2 class="inText">這個網站的製作初衷是為了去紀錄自己在成為爆肝工程師的歷程和學習過程，</h2>
-                <h2 class="inText">也是為了訓練我有關網站設計的一個平台。</h2>
-                <h1></h1>
-                <h2 class="inText">以下是我個人的社交平台和GitHub</h2>
-                <h2 class="inText">-----------------------------------------------------------------------</h2>
-                <h2 class="inText">FB:<a class="inText" href="https://www.facebook.com/fergus4506">楊敦傑</a></h2>
-                <h2 class="inText">IG:<a class="inText" href="https://www.instagram.com/fergus5211">fergus5211</a></h2>
-                <h2 class="inText">GitHub:<a class="inText" href="https://github.com/Fergus4506">Yang Dunjie</a></h2>
-                <h2 class="inText">以下還會有一個自我檢測的樹狀圖.....(施工中)</h2>
-                <!-- <img src=""> -->
-                <h2 class="inText">偷偷說一下，我也是個熱愛遊玩集換式卡片遊戲的人，有興趣我們也可以來交流一下。</h2>
+            <div class="part_container">
+                <div class="bottom"></div>
+                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
+                </div>
+                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+            </div>
+            <div class="part_container">
+                <div class="bottom"></div>
+                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
+                </div>
+                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
             </div>
             
+            <div class="part_container">
+                <div class="bottom"></div>
+                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
+                </div>
+                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+            </div>
+            <div class="part_container">
+                <div class="bottom"></div>
+                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
+                </div>
+                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+            </div>
         </div>
     </div>
     
     <div class="container">
         <div class="bottom_container">
-            <p class="inText">此網站設計皆為學術用途，如到用畢追究責任。</p>
+            <p class="inText">此網站設計皆為學術用途，如盜用畢追究責任。</p>
+            <p class="inText">爆肝人小六製作</p>
+            <p class="inText">icon感謝https://www.flaticon.com/提供</p>
         </div>
     </div>
     
     
     <script>
+        function part_onclick(x){
+            var now_opacity=x.style.opacity;
+            if(now_opacity==1){
+                x.style.opacity="0.2";
+            }else{
+                x.style.opacity="1";
+                console.log(now_opacity);
+            }
+        }
+
         function nav_chImg(x){
             let down_menu=document.querySelector('.nav_options_inbth');
             if(x.src=="file:///D:/personWeb_design/temporary_person_web/image_for_web/stack.png"){
@@ -76,7 +98,7 @@
             }else{
                 x.src="../image_for_web/stack.png";
                 down_menu.style.display="none";
-                console.log("??")
+                console.log("?")
             }
             console.log(x.src);
         }
