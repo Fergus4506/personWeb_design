@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@600;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <br>
     <div class="container">
         <header class="header">
             <div class="navber">
                 <div class="nav_title"><a href="../main_page/main_page.html">敦傑の歷程展示</a><p class="breadcrumb">/</p><a class="breadcrumb" href="myself_page.html">關於我</a></div>
                 <ul class="nav_options">
-                    <li><a href="myself_page.html">關於我</a></li>
+                    <li><a href="myself_page.html">解題報告</a></li>
                     <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
                     <li><a href="../specialskill_page/specialskill_page.html">歷程記錄</a></li>
                     <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
@@ -22,7 +23,7 @@
                 <div class="nav_bth">
                     <img onclick="nav_chImg(this)" src="../image_for_web/stack.png"></img>
                     <ul class="nav_options_inbth">
-                        <li><a href="../myself_page/myself_page.html">關於我</a></li>
+                        <li><a href="../myself_page/myself_page.html">解題報告</a></li>
                         <li><a href="../readPlan_page/readPlan.html">讀書計畫</a></li>
                         <li><a href="../specialskill_page/specialskill_page.html">歷程記錄</a></li>
                         <li><a href="../whatIDo_page/whatIDo_page.html">作品展示</a></li>
@@ -42,30 +43,31 @@
 
     <div class="container">
         <div class="information_contaioner">
-            <div class="part_container">
+            <br>
+            <div class="part_container rpc">
                 <div class="bottom"></div>
                 <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
                 </div>
-                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">UVA online judge</p>
             </div>
-            <div class="part_container">
+            <div class="part_container lpc">
                 <div class="bottom"></div>
                 <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
                 </div>
-                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">Leetcode</p>
             </div>
             
-            <div class="part_container">
+            <div class="part_container rpc">
                 <div class="bottom"></div>
                 <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
                 </div>
-                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">fajlksdjflkjasdk</p>
             </div>
-            <div class="part_container">
+            <div class="part_container lpc">
                 <div class="bottom"></div>
                 <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
                 </div>
-                <p style="margin-top: -200px;">fajlksdjflkjasdkllkfjlaksjdlkfjlkasdjlfklaksfjasldjlfkj</p>
+                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">fajlksdjflkjasdk</p>
             </div>
         </div>
     </div>
@@ -84,8 +86,10 @@
             var now_opacity=x.style.opacity;
             if(now_opacity==1){
                 x.style.opacity="0.2";
+                x.parentNode.firstElementChild.style.backgroundColor="black";
             }else{
                 x.style.opacity="1";
+                x.parentNode.firstElementChild.style.backgroundColor="white";
                 console.log(now_opacity);
             }
         }
