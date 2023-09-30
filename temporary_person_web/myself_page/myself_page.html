@@ -44,30 +44,35 @@
     <div class="container">
         <div class="information_contaioner">
             <br>
+            <p class="inText" style="font-size: 38px;margin-bottom: 20px;">o(*°▽°*)o以下為我在目前所經歷的程式解題經歷和解題報告o(*°▽°*)o</p>
+            <p class="inText" style="font-size: 38px;">------------------------------------------------------------</p>
+            <p style="font-size: 24px;" class="inText">UVA online judge</p>
             <div class="part_container rpc">
                 <div class="bottom"></div>
                 <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
                 </div>
-                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">UVA online judge</p>
-            </div>
-            <div class="part_container lpc">
-                <div class="bottom"></div>
-                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
-                </div>
-                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">Leetcode</p>
             </div>
             
-            <div class="part_container rpc">
-                <div class="bottom"></div>
-                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
-                </div>
-                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">fajlksdjflkjasdk</p>
-            </div>
+            <p style="font-size: 24px;" class="inText">Leetcode</p>
             <div class="part_container lpc">
                 <div class="bottom"></div>
                 <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
                 </div>
-                <p style="margin-top: -275px;margin-left:170px;font-size: 25px;">fajlksdjflkjasdk</p>
+                
+            </div>
+            <p style="font-size: 24px;" class="inText">CPE</p>
+            <div class="part_container rpc">
+                <div class="bottom"></div>
+                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
+                </div>
+                
+            </div>
+            <p style="font-size: 24px;" class="inText">NCPC && ICPC</p>
+            <div class="part_container lpc">
+                <div class="bottom"></div>
+                <div class="float_container" onclick="part_onclick(this)" style="opacity: 1;">
+                </div>
+                
             </div>
         </div>
     </div>
@@ -113,6 +118,7 @@
                 var information_contaioner=document.querySelector('.information_contaioner');
                 var bottom_container=document.querySelector('.bottom_container');
                 var inText=document.querySelectorAll('.inText');
+                var part_container=document.querySelectorAll('.part_container');
                 console.log(inText);
                 if(scroll>200){
                     bottom_container.style.backgroundColor="rgb(63, 63, 63)";
@@ -122,6 +128,9 @@
                     information_contaioner.style.boxShadow="-5px -5px 0.2px 0.5px rgb(50, 50, 50) inset";
                     for(var i=0;i<inText.length;i++){
                         inText[i].style.color="white";
+                    }
+                    for(var i=0;i<part_container.length;i++){
+                        part_container[i].style.opacity="1";
                     }
                 }
             });
