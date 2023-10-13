@@ -48,8 +48,8 @@
     z-index: 5000;
     margin-bottom: -30px;
     top:250px;
-    
-    transition: 0.5s;
+    left: 30px;
+    transition: 2s;
 }
 .img_1{
     margin-top: -300px;
