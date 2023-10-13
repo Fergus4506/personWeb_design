@@ -37,6 +37,7 @@
     /* margin-top: -10px; */
 }
 .inText{
+    color:rgba(0, 0, 0, 0);
     font-family: 'Noto Sans TC', sans-serif;
 }
 .part_container .bottom{
@@ -49,7 +50,7 @@
     margin-bottom: -30px;
     top:250px;
     left: 30px;
-    transition: 2s;
+    transition: 1.5s;
 }
 .img_1{
     margin-top: -300px;
