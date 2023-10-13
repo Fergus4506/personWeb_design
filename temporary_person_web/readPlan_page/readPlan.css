@@ -10,26 +10,12 @@
     align-items: center;
     flex-direction: column;
 }
-.information_contaioner .Lead_show{
-    position: relative;
+.information_contaioner table td{
+    padding: 10px;
+    border: 1px solid #333;
+    color: #fff;
 }
-.information_contaioner .inText_container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-shadow:5px 5px 0.2px 0.5px rgb(22, 22, 22) inset;
-    padding: 25px;
-}
-.information_contaioner .inText{
-    color: black;
-    transition: 0.5s;
-    font-family: 'Noto Sans TC', sans-serif;
-}
-.information_contaioner .inText a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Noto Sans TC', sans-serif;
-}
+
 .bottom_container{
     background-color: black;
     width: 1200px;
